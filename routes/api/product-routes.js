@@ -26,14 +26,7 @@ router.get('/:id', async (req, res) => {
 
   try {
     const product = await Product.findByPk(id, {
-      include: [
-        {
-          model: Category
-        },
-        {
-          model: Tag
-        }
-      ]
+      include: [Category, Tag]
     });
 
     res.json(product);
@@ -121,7 +114,9 @@ router.delete('/:id', async (req, res) => {
   const { id } = req.params;
 
   try {
-    const deletedProduct = await Product.findByPk(id);
+    const deletedProduct = await Product.findByPk(id, {
+      include: [Category, Tag]
+    });
     await Product.destroy({
       where: { id }
     });
