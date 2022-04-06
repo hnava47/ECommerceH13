@@ -12,9 +12,9 @@ router.get('/', async (req, res) => {
       include: [Category, Tag]
     });
 
-    res.json(allProducts);
+    res.status(200).json(allProducts);
   } catch (error) {
-    res.json(error);
+    res.status(400).json(error);
   }
 });
 
@@ -29,9 +29,9 @@ router.get('/:id', async (req, res) => {
       include: [Category, Tag]
     });
 
-    res.json(product);
+    res.status(200).json(product);
   } catch (error) {
-    res.json(error);
+    res.status(400).json(error);
   }
 });
 
@@ -121,9 +121,9 @@ router.delete('/:id', async (req, res) => {
       where: { id }
     });
 
-    res.json(deletedProduct);
+    res.status(200).json(deletedProduct);
   } catch (error) {
-    res.json(error);
+    res.status(400).json(error);
   }
 });
 

@@ -11,9 +11,9 @@ router.get('/', async (req, res) => {
       include: [Product]
     });
 
-    res.json(allCategories);
+    res.status(200).json(allCategories);
   } catch (error) {
-    res.json(error);
+    res.status(400).json(error);
   }
 });
 
@@ -27,9 +27,9 @@ router.get('/:id', async (req, res) => {
       include: [Product]
     });
 
-    res.json(category);
+    res.status(200).json(category);
   } catch (error) {
-    res.json(error);
+    res.status(400).json(error);
   }
 });
 
@@ -42,9 +42,9 @@ router.post('/', async (req, res) => {
       category_name
     });
 
-    res.json(createCategory);
+    res.status(200).json(createCategory);
   } catch (error) {
-    res.json(error);
+    res.status(400).json(error);
   }
 });
 
@@ -61,9 +61,9 @@ router.put('/:id', async (req, res) => {
       include: [Product]
     });
 
-    res.json(updatedCategory);
+    res.status(200).json(updatedCategory);
   } catch (error) {
-    res.json(error);
+    res.status(400).json(error);
   }
 });
 
@@ -79,9 +79,9 @@ router.delete('/:id', async (req, res) => {
       where: { id }
     });
 
-    res.json(deletedCategory);
+    res.status(200).json(deletedCategory);
   } catch (error) {
-    res.json(error);
+    res.status(400).json(error);
   }
 });
 

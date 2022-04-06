@@ -11,9 +11,9 @@ router.get('/', async (req, res) => {
       include: [Product]
     });
 
-    res.json(allTags);
+    res.status(200).json(allTags);
   } catch (error) {
-    res.json(error);
+    res.status(400).json(error);
   }
 });
 
@@ -27,9 +27,9 @@ router.get('/:id', async (req, res) => {
       include: [Product]
     });
 
-    res.json(tag);
+    res.status(200).json(tag);
   } catch (error) {
-    res.json(error);
+    res.status(400).json(error);
   }
 });
 
@@ -42,9 +42,9 @@ router.post('/', async (req, res) => {
       tag_name
     });
 
-    res.json(createTag);
+    res.status(200).json(createTag);
   } catch (error) {
-    res.json(error);
+    res.status(400).json(error);
   }
 });
 
@@ -63,9 +63,9 @@ router.put('/:id', async (req, res) => {
       include: [Product]
     });
 
-    res.json(updatedTag);
+    res.status(200).json(updatedTag);
   } catch (error) {
-    res.json(error);
+    res.status(400).json(error);
   }
 });
 
@@ -81,9 +81,9 @@ router.delete('/:id', async (req, res) => {
       where: { id }
     });
 
-    res.json(deletedTag);
+    res.status(200).json(deletedTag);
   } catch (error) {
-    res.json(error);
+    res.status(400).json(error);
   }
 });
 
