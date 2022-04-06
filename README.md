@@ -33,9 +33,13 @@ The purpose of this project was to provide backend APIs for an e-commerce applic
 * Category
 * Tag
 
+![API][api-screenshot]
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Contact
 * Hector Nava - hector.r.nava44@gmail.com
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+[api-screenshot]: ./assets/api_screenshot.png
