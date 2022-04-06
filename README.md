@@ -19,9 +19,11 @@
 <br/>
 
 ## Installation
-* Clone this repository by running the following command from the command line: <code>git clone https://github.com/hnava47/ECommerceH13.git</code>
-* Change (cd) into the ECommerceH13 directory
-* From the command line run the command <code>npm install</code> to install required packages.
+<ul>
+    <li>Clone this repository by running the following command from the command line: <code>git clone https://github.com/hnava47/ECommerceH13.git</code></li>
+    <li>Change (cd) into the ECommerceH13 directory</li>
+    <li>From the command line run the command <code>npm install</code> to install required packages</li>
+</ul>
 
 ## About The Project
 The purpose of this project was to provide an application where users can login and share content with others. The users are able to login either through Facebook or by signing up directly.
