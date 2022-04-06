@@ -25,12 +25,13 @@
     <li>From the command line run the command <code>npm install</code> to install required packages</li>
 </ul>
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ## About The Project
-The purpose of this project was to provide an application where users can login and share content with others. The users are able to login either through Facebook or by signing up directly.
-
-Once logged in, the user is able to create posts, like and comment on other posts. The user also has control over their content, so they have the options to edit and delete their posts, comments, and likes.
-
-Once the user clicks the plus button, they are prompted with a modal that allows them to create their content. Once they click the post button, their content will be uploaded and they will receive a success alert in the bottom right corner of the page.
+The purpose of this project was to provide backend APIs for an e-commerce application. Endpoints were created to conduct create, read, update, and delete for the following:
+* Product
+* Category
+* Tag
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -38,9 +39,3 @@ Once the user clicks the plus button, they are prompted with a modal that allows
 * Hector Nava - hector.r.nava44@gmail.com
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- LINKS -->
-[login-screenshot]: ./public/img/login-ss.png
-[signup-screenshot]: ./public/img/signup-ss.png
-[feed-screenshot]: ./public/img/newsfeed-ss.png
-[post-screenshot]: ./public/img/post-ss.png
